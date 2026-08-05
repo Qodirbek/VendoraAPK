@@ -21,11 +21,13 @@ jobs:
         node-version: 22
 
     - name: Install npm
-      run: npm install
+      run: |
+         npm install
+         chmod -R +x node_modules/.bin
 
     - name: Capacitor sync
       run: |
-       npm exec cap sync android
+       ./node_modules/.bin/cap sync android
 
     - name: Setup Java
       uses: actions/setup-java@v4
