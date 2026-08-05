@@ -1,0 +1,9 @@
+{
+  "appId": "com.vendora.market",
+  "appName": "Vendora Market",
+  "webDir": "www",
+  "server": {
+    "url": "https://vendora-market.onrender.com",
+    "cleartext": true
+  }
+}
